@@ -29,7 +29,7 @@ App.post('/', (req, res) => {
     };
 
     const jsonData = JSON.stringify(data);
-    const url = "https://us6.api.mailchimp.com/3.0/lists/YourID";
+    const url = "https://YourDataCenterName.api.mailchimp.com/3.0/lists/YourID";
     const options = {
         method: "POST",
         auth: "Your API KEY"
