@@ -2,7 +2,7 @@
 nodejs with chimpmail
 
 #installation Steps::
-
-1.clone the project 
-2.Type **npm install**
-if your using yarn type **yarn install**
+<ol>
+<li>1.clone the project </li>
+  <li>2.Type <b>npm install</b> </li>
+  if your using yarn type <b>yarn install</b>
