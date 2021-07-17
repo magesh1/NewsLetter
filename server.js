@@ -2,10 +2,6 @@ const express = require('express');
 const App = express();
 const https = require('https')
 
-//api key = d18638c345b87da4ad61fc34cd4b2ce1-us6
-// id = 77c9610503
-
-
 App.use(express.urlencoded({ extended: true }));
 
 App.use(express.static("public"));
@@ -33,10 +29,10 @@ App.post('/', (req, res) => {
     };
 
     const jsonData = JSON.stringify(data);
-    const url = "https://us6.api.mailchimp.com/3.0/lists/77c9610503";
+    const url = "https://us6.api.mailchimp.com/3.0/lists/YourID";
     const options = {
         method: "POST",
-        auth: "magesh:d18638c345b87da4ad61fc34cd4b2ce1-us6"
+        auth: "Your API KEY"
     }
 
     const request = https.request(url, options, (response) => {
